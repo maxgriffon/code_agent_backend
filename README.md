@@ -31,7 +31,7 @@ Frontend (Next.js) ↔ CopilotKit ↔ FastAPI Backend ↔ LangGraph Agent ↔ Gr
 - Groq API key ([Get one here](https://console.groq.com))
 
 ## Python
-- Recommend Python version 3.12 some computers are running python 3.9 or python 3.13 these will not work as there are packages that don't exist in these versions. 
+- Recommend Python version 3.12 some computers are running python 3.9 or python 3.13 these will not work as there are packages that don't exist in these versions.
 
 ```bash
 brew install python3.12
