@@ -80,6 +80,7 @@ python3 --version
 
 5. **Start the backend server**
    ```bash
+   cd backend
    python3 main.py
    ```
    
@@ -90,6 +91,7 @@ python3 --version
     This will run everything in the terminal and you can interact with agent in the terminal. Useful if the frontend is not working. 
 
     ```bash
+    cd backend
    python3 test.py
    ```
 
