@@ -24,6 +24,66 @@ Frontend (Next.js) ↔ CopilotKit ↔ FastAPI Backend ↔ LangGraph Agent ↔ Gr
 - **Agent Framework**: LangGraph for structured conversation flow
 - **File Operations**: Custom tools for workspace management
 
+### Supported Languages
+
+The agent supports the following programming languages:
+
+- Python (`.py`)
+- JavaScript (`.js`)
+- TypeScript (`.ts`, `.tsx`)
+- Java (`.java`)
+- C++ (`.cpp`)
+- C (`.c`)
+- C# (`.cs`)
+- Go (`.go`)
+- Rust (`.rs`)
+- PHP (`.php`)
+- Swift (`.swift`)
+- Kotlin (`.kt`)
+
+## Usage
+
+### Basic Commands
+
+The agent understands natural language instructions for various code operations:
+
+#### Sample Prompts
+```
+"Create a Python function that calculates fibonacci numbers"
+"Write a JavaScript function to reverse a string"
+"Write a Python Pong game in my Downloads folder"
+"Update my hello world code to saying "hello how are you"
+"Delete XXXX file code file from my repo."
+```
+
+## Project Structure
+
+```
+code_agent_backend/
+├── backend/
+│   ├── agent/
+│   │   ├── nodes/
+│   │   │   ├── analysis_node.py      # Request analysis
+│   │   │   └── generate_code.py      # Code generation
+│   │   ├── constants/
+│   │   │   └── constants.py          # Constants
+│   │   ├── graph.py                  # Graph workflow
+│   │   ├── model.py                  # LLM Model configuration
+│   │   ├── prompts.py                # System prompts
+│   │   ├── state.py                  # State management
+│   │   ├── tools.py                  # File operation tools
+│   │   └── utils.py                  # Utility functions
+│   ├── main.py                       # FastAPI server
+│   ├── test.py                       # Testing script
+└── frontend/
+|    ├── api/copilot/route.ts      # CopilotKit API route
+|    ├── layout.tsx                # App layout with CopilotKit
+|    └── page.tsx                  # Main chat interface
+|    └── package.json                  # Node.js dependencies
+|__requirements.txt
+```
+
+
 ## Prerequisites
 
 - Python 3.12
@@ -47,6 +107,22 @@ pyenv local 3.12.0
 To confirm your python version you can run:
 ```bash
 python3 --version
+```
+## Node 
+
+If your node version is out of date please update it by doing the fallowing.
+
+```bash
+brew install nvm
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+nvm install 18
+
+node -v
+—> should see v18.20.8
 ```
 
 ## Installation
@@ -115,65 +191,6 @@ python3 --version
    ```
    
    The frontend will be available at `http://localhost:3000`
-
-### Supported Languages
-
-The agent supports the following programming languages:
-
-- Python (`.py`)
-- JavaScript (`.js`)
-- TypeScript (`.ts`, `.tsx`)
-- Java (`.java`)
-- C++ (`.cpp`)
-- C (`.c`)
-- C# (`.cs`)
-- Go (`.go`)
-- Rust (`.rs`)
-- PHP (`.php`)
-- Swift (`.swift`)
-- Kotlin (`.kt`)
-
-## Usage
-
-### Basic Commands
-
-The agent understands natural language instructions for various code operations:
-
-#### Sample Prompts
-```
-"Create a Python function that calculates fibonacci numbers"
-"Write a JavaScript function to reverse a string"
-"Write a Python Pong game in my Downloads folder"
-"Update my hello world code to saying "hello how are you"
-"Delete XXXX file code file from my repo."
-```
-
-## Project Structure
-
-```
-code_agent_backend/
-├── backend/
-│   ├── agent/
-│   │   ├── nodes/
-│   │   │   ├── analysis_node.py      # Request analysis
-│   │   │   └── generate_code.py      # Code generation
-│   │   ├── constants/
-│   │   │   └── constants.py          # Constants
-│   │   ├── graph.py                  # Graph workflow
-│   │   ├── model.py                  # LLM Model configuration
-│   │   ├── prompts.py                # System prompts
-│   │   ├── state.py                  # State management
-│   │   ├── tools.py                  # File operation tools
-│   │   └── utils.py                  # Utility functions
-│   ├── main.py                       # FastAPI server
-│   ├── test.py                       # Testing script
-└── frontend/
-|    ├── api/copilot/route.ts      # CopilotKit API route
-|    ├── layout.tsx                # App layout with CopilotKit
-|    └── page.tsx                  # Main chat interface
-|    └── package.json                  # Node.js dependencies
-|__requirements.txt
-```
 
 ## Development
 
