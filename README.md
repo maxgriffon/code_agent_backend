@@ -76,7 +76,7 @@ python3 --version
    ```env
    GROQ_API_KEY=your_groq_api_key_here
    ```
-   If you don't have a groq key please go to `https://console.groq.com` and create/sign in an account. Once logged in, look for "API Keys" in the left sidebar or navigation menu. Finally click on Create api key and then copy it into your .env
+   If you don't have a groq key please go to `https://console.groq.com` and create/sign in an account. Once logged in, look for "API Keys" in the upper right navigation bar. Finally click on Create api key and then copy it into your .env
 
 5. **Start the backend server**
    ```bash
