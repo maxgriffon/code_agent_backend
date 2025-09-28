@@ -20,7 +20,7 @@ Frontend (Next.js) ↔ CopilotKit ↔ FastAPI Backend ↔ LangGraph Agent ↔ Gr
 
 - **Frontend**: Next.js with CopilotKit React components
 - **Backend**: FastAPI server with LangGraph agent integration
-- **AI Model**: Groq's Llama 3.3 70B model for code generation
+- **AI Model**: Llama 3.3 70B model for code generation
 - **Agent Framework**: LangGraph for structured conversation flow
 - **File Operations**: Custom tools for workspace management
 
@@ -29,6 +29,14 @@ Frontend (Next.js) ↔ CopilotKit ↔ FastAPI Backend ↔ LangGraph Agent ↔ Gr
 - Python 3.12
 - Node.js 18+
 - Groq API key ([Get one here](https://console.groq.com))
+
+## Python
+- Recommend Python version 3.12 some computers are running python 3.9 or python 3.13 these will not work as there are packages that don't exist in these versions. 
+
+```bash
+brew install python3.12
+```
+This should install it then you can create your venv with command below. 
 
 ## Installation
 
