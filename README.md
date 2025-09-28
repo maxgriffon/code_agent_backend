@@ -116,22 +116,6 @@ python3 --version
    
    The frontend will be available at `http://localhost:3000`
 
-## Configuration
-
-### Backend Configuration
-
-The agent can be configured through environment variables:
-
-```env
-# Required
-GROQ_API_KEY=your_groq_api_key_here
-
-# Optional
-MODEL_NAME=llama-3.3-70b-versatile
-TEMPERATURE=0.1
-PORT=8000
-```
-
 ### Supported Languages
 
 The agent supports the following programming languages:
@@ -162,21 +146,6 @@ The agent understands natural language instructions for various code operations:
 "Write a Python Pong game in my Downloads folder"
 "Update my hello world code to saying "hello how are you"
 "Delete XXXX file code file from my repo."
-```
-
-#### Agent Interaction
-```bash
-POST http://localhost:8000/agent
-Content-Type: application/json
-
-{
-  "messages": [
-    {
-      "role": "user", 
-      "content": "Create a hello world function in Python"
-    }
-  ]
-}
 ```
 
 ## Project Structure
