@@ -36,7 +36,18 @@ Frontend (Next.js) ↔ CopilotKit ↔ FastAPI Backend ↔ LangGraph Agent ↔ Gr
 ```bash
 brew install python3.12
 ```
-This should install it then you can create your venv with command below. 
+This should install it then you can create your venv with command below. If this does not work then you can try this alternative. 
+
+```bash
+brew install pyenv
+pyenv install 3.12.0
+pyenv local 3.12.0
+```
+
+To confirm your python version you can run:
+```bash
+python3 --version
+```
 
 ## Installation
 
