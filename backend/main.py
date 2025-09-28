@@ -8,7 +8,7 @@ from agent.graph import graph
 
 # Create FastAPI app
 app = FastAPI(
-    title="Code Editing Agent API",\
+    title="Code Editing Agent API",
     description="Simple code editing agent",
     version="1.0.0"
 )
