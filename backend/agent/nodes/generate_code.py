@@ -19,6 +19,8 @@ def generate_code(state: State):
     the operation that you are preforming {state.get("userRequest").operation_type}
     the type of code that you are building is {state.get("userRequest").code_type}
     the language that you are devloping in {state.get("userRequest").language}
+    the file name is {state.get("userRequest").filename}
+    the directory if added will be {state.get("userRequest").directory}
 
     This is the requst the user is want accomplished:
     {state.get("userRequest").user_message}

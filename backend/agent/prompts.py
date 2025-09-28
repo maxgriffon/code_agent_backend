@@ -30,6 +30,7 @@ directory:
 
 filename:
 - if user mentions a specific filename use that filename otherwise generate a file name that would make sense with the right suffex for that language.
+- default to generated_script as a file name
 
 user_message:
 the user message. if there is anything else that might be valuable to add like any libraries that would be used add it to the message in 1-2 sentences.
