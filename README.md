@@ -87,7 +87,7 @@ code_agent_backend/
 ## Prerequisites
 
 - Python 3.12
-- Node.js 18+
+- Node.js 22+
 - Groq API key ([Get one here](https://console.groq.com))
 
 ## Python
@@ -119,10 +119,10 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
-nvm install 18
+nvm install 22
 
 node -v
-—> should see v18.20.8
+—> should see v22.20.0
 ```
 
 ## Installation
